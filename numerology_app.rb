@@ -5,18 +5,18 @@ birthdate = gets.to_i
 #2. Determine birthdate
 number = birthdate [0] + birthdate [1] + birthdate [2] + birthdate [3] + birthdate [4] + birthdate [5] + birthdate [6] + birthdate [7]
 number_string = number.to_s
-number = gets.to_i
+number = birthdate.to_i
 
 #3. Assign to a variable
 number = birthdate [0] + birthdate [1]
 number_string = number.to_s
-number = gets.to_i
+number = birthdate.to_i
 
 #4. if statement
 if number > 9
 	then number = number [0] + number [1]
 	number_string = number.to_s
-	number = gets.to_i
+	number = number.to_i
 	end
 	return number
 
