@@ -17,11 +17,12 @@ if number > 9
 	then number = number [0] + number [1]
 	number_string = number.to_s
 	number = number.to_i
-	end
 	return number
+end
 
 
 #5. Case statement
+final_number = birthdate
 case final_number
 	when 1
 	message = "One is the leader. The number one indicates the ability to stand alone and is a strong vibration. Ruled by the Sun."
@@ -45,7 +46,8 @@ else
 	message = "I can't help you. I see no number..."
 end
 
-final_number = birthdate
 message = final_number(birthdate)
 puts message
+
+
 
