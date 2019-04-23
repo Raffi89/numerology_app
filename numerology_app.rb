@@ -1,28 +1,30 @@
 #1. Ask for birthdate
 puts "What is your birthdate? Enter it in the DDMMYYYY format"
-birthdate = gets.to_i
+birthdate = gets.to_s
 
 #2. Determine birthdate
-number = birthdate [0] + birthdate [1] + birthdate [2] + birthdate [3] + birthdate [4] + birthdate [5] + birthdate [6] + birthdate [7]
-number_string = number.to_s
-number = birthdate.to_i
+number = birthdate [0].to_i + birthdate [1].to_i + birthdate [2].to_i + birthdate [3].to_i + birthdate [4].to_i + birthdate [5].to_i + birthdate [6].to_i + birthdate [7].to_i
+puts number
+
 
 #3. Assign to a variable
-number = birthdate [0] + birthdate [1]
-number_string = number.to_s
-number = birthdate.to_i
+number = number.to_s
+number_two = number [0].to_i + number [1].to_i
+puts number_two
+number_two = number_two.to_s
 
 #4. if statement
-if number > 9
-	then number = number [0] + number [1]
-	number_string = number.to_s
-	number = number.to_i
-	return number
+if number_two.to_i > 9
+	then number_three = number_two [0].to_i + number_two [1].to_i
+else
+	number_three = number_two.to_i
 end
+
+puts number_three
 
 
 #5. Case statement
-final_number = birthdate
+final_number = number_three
 case final_number
 	when 1
 	message = "One is the leader. The number one indicates the ability to stand alone and is a strong vibration. Ruled by the Sun."
@@ -46,7 +48,6 @@ else
 	message = "I can't help you. I see no number..."
 end
 
-message = final_number(birthdate)
 puts message
 
 
